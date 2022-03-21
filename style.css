@@ -1,9 +1,3 @@
-/* Phones, 600px up and down */
-@media only screen and (max-width: 600px) {}
-
-[class*="col-"] {
-    width: 100%;
-  }
 
 html, body {
     margin: 0 auto;
@@ -118,12 +112,7 @@ html, body {
     left: 20px;
     
 
-    height: 17
-    
-    
-       
-    
-    0px;
+    height: 170px;
     width: 400px;
     padding: 10px;
     border: 10px black;
@@ -133,3 +122,68 @@ html, body {
     box-shadow: -6px 6px  rgba(0, 0, 0, 0.30);
     cursor: default;
 }
+
+
+/* typical phones */
+
+@media (max-width: 1200px), (max-height: 720px) {
+
+    #todolist {
+        width: 200px;
+    }
+    #guidelines {
+        position: relative;
+        left: auto; 
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        width: 300px;
+        height: 240px;
+        margin-bottom: 10px;
+    }
+
+    #inputBox {
+        top: 50%;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    #addBtn {
+        top: 57%;
+        width: 300px;
+        margin-top: 15px;
+    }
+
+    .to-dos {
+        position: relative;
+        top: 250px;
+        width: 300px;
+        /* margin-top: 10px; */
+    }
+}
+
+/* fuckin' nokia */
+
+/* @media only screen and (max-width: 400px), (max-height: 600px) {
+
+    #inputBox {
+        top: 65%;
+    }
+
+    #addBtn {
+        top: 75%;
+    }
+
+    .to-dos {
+        top: 190px;
+        margin-top: 10px;
+    }
+} */
+
