@@ -126,11 +126,12 @@ html, body {
 
 /* typical phones */
 
-@media (max-width: 1200px), (max-height: 720px) {
+@media screen ,(min-width: 480px) {
 
     #todolist {
         width: 200px;
     }
+
     #guidelines {
         position: relative;
         left: auto; 
@@ -163,27 +164,58 @@ html, body {
 
     .to-dos {
         position: relative;
-        top: 250px;
+        top: 350px;
         width: 300px;
-        /* margin-top: 10px; */
     }
 }
 
-/* fuckin' nokia */
+/* ipads */
 
-/* @media only screen and (max-width: 400px), (max-height: 600px) {
+@media only screen and (min-width: 768px) 
+{
+
+   #guidelines {
+    position: relative;
+    left: auto; 
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 280px;
+    margin-bottom: 10px;
+   }
+
+   #inputBox {
+       top: 50%;
+   }
+    
+   #addBtn {
+       top: 57%;
+   }
+
+   .to-dos {
+        position: relative;
+        top: 350px;
+        margin-top: 10px;
+   }
+}
+
+/* fuckin nokia */
+
+@media (max-height: 700px), (max-width: 400px)  {
 
     #inputBox {
-        top: 65%;
+        top: 69%;
     }
 
     #addBtn {
-        top: 75%;
+        top: 78%;
     }
-
-    .to-dos {
-        top: 190px;
-        margin-top: 10px;
-    }
-} */
-
+    
+}
